@@ -5,11 +5,6 @@ import pandas as pd
 import gspread 
 import numpy as np
 
-# ACCES GOOGLE SHEET
-gc = gspread.service_account(filename='finale.json')
-sh = gc.open_by_key('1oWPHAeBENUpYnfkb9iPdikJrOd6DRbND8dZURgJhkWc')
-worksheet = sh.get_worksheet(1) #-> 0 - first sheet, 1 - second sheet etc. 
-
 
 mp_drawing = mp.solutions.drawing_utils
 mp_pose = mp.solutions.pose

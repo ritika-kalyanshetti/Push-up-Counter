@@ -2,7 +2,6 @@ import cv2
 import mediapipe as mp
 import os
 import pandas as pd
-import gspread 
 import numpy as np
 
 
@@ -63,7 +62,5 @@ with mp_pose.Pose(
     key = cv2.waitKey(1) & 0xFF
     if key == ord("q"):
       break
-array = np.array(counter)
-worksheet.update('A1', array.tolist())
 cv2.destroyAllWindows()
 
